@@ -1,0 +1,9 @@
+name: run-tests
+on: [push]
+jobs:
+  run-tests-web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: docker build --target=test ./web/ -t web_test
+      - run: docker run web_test
