@@ -1,4 +1,4 @@
 export default function Home() {
-  const x: number = 'xasdasdasdd';
-  return <h1>{x}</h1>
+  const sdasd = "asdasdasd";
+  return                  <h1>Index</h1>
 }

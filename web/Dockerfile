@@ -16,5 +16,5 @@ CMD ["yarn", "dev"]
 
 FROM base as test
 
-RUN yarn type-check
+RUN yarn type-check && yarn lint
 
