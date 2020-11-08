@@ -3,10 +3,10 @@ version: "3.7"
 services:
     web:
         build: 
-            context: web
+            context: .
             target: development
         volumes:
-            - ./web/:/app/
+            - ./:/app/
         ports:
             - 3000:3000
     

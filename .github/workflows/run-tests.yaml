@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: docker build --target=test ./web/ -t web_test
+      - run: docker build --target=test ./ -t web_test
       - run: docker run web_test

@@ -34,3 +34,7 @@ yarn-error.log*
 
 # config
 .vscode/
+
+# git
+.git/
+.github/
